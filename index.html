@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Name (text) </label>
+        <input type="text" id="name" name="name" />
+        <label for="age">Age (number) </label>
+        <input type="number" name="age" id="age" min="18" />
+        <label for="dob">Date of Birth (date) </label>
+        <input type="date" id="dob" name="dob" />
+        <label for="avatar">Your Picture (file)</label>
+        <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/png, image/jpeg"
+        />
+
+        <label for="password">Password (password)</label>
+        <input type="password" id="password" name="password" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label for="phone">Phone (tel)</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="email">Email (email)</label>
+        <input type="email" id="email" name="email" />
+        <label for="url"> Portfolio url (url)</label>
+        <input type="url" id="url" name="url" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Last Appointment</legend>
+        <label for="appointment">Last Appointment (datetime-local) </label>
+        <input type="datetime-local" id="appointment" name="appointment" />
+        <label for="search">Name of Clinic (search)</label>
+        <input type="search" id="search" name="search" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Date for Upcoming Appointment</legend>
+        <label for="subscription-month">Preferred Month (month) </label>
+        <input type="month" id="subscription-month" name="subscription-month" />
+        <label for="week">Preferred Week (week)</label>
+        <input type="week" id="week" name="week" />
+        <label for="time">Preferred Time (time)</label>
+        <input type="time" id="time" name="time" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Others</legend>
+        <label for="color">Colour preference (color)</label>
+        <input type="color" id="color" name="color" />
+        <label for="range">Range of numbers (range)</label>
+        <input type="range" name="range" id="range" />
+      </fieldset>
+    </form>
+  </body>
+</html>
